@@ -1,0 +1,1284 @@
+/* =========================
+   GLOBAL SETTINGS
+========================= */
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',Arial,sans-serif;
+
+}
+
+
+body{
+
+    background:#F5F8FF;
+    color:#333;
+    line-height:1.6;
+
+}
+
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+
+a{
+
+    text-decoration:none;
+    color:white;
+
+}
+
+
+
+/* =========================
+   HEADER
+========================= */
+
+
+.header{
+
+    width:100%;
+    background:#4B0082;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 5%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+}
+
+
+
+.logo-area{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+
+.logo-area img{
+
+    width:75px;
+    height:75px;
+
+}
+
+
+.logo-area h1{
+
+    color:white;
+    font-size:32px;
+
+}
+
+
+.logo-area p{
+
+    color:#FFE4F2;
+    font-size:16px;
+
+}
+
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+
+.navbar{
+
+    display:flex;
+    gap:25px;
+    align-items:center;
+
+}
+
+
+.navbar a{
+
+    color:white;
+    font-size:17px;
+    font-weight:bold;
+    transition:0.3s;
+
+}
+
+
+.navbar a:hover{
+
+    color:#FFD700;
+
+}
+
+
+
+/* Mobile menu button */
+
+#menu-toggle{
+
+    display:none;
+
+}
+
+
+.menu-icon{
+
+    display:none;
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+
+}
+
+
+
+
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+
+.hero{
+
+    width:90%;
+    margin:40px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+
+
+.hero-content{
+
+    width:50%;
+
+}
+
+
+
+.hero-content h2{
+
+    color:#4B0082;
+    font-size:32px;
+    margin-bottom:15px;
+
+}
+
+
+
+.hero-content h1{
+
+    font-size:40px;
+    color:#222;
+    margin-bottom:20px;
+
+}
+
+
+
+.hero-content p{
+
+    font-size:17px;
+    margin-bottom:15px;
+
+}
+
+
+
+.hero-image{
+
+    width:45%;
+
+}
+
+
+.hero-image img{
+
+    border-radius:15px;
+
+}
+
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+
+button{
+
+    background:#4B0082;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:25px;
+    font-size:16px;
+    cursor:pointer;
+    margin:10px;
+    transition:0.3s;
+
+}
+
+
+
+button:hover{
+
+    background:#FFD700;
+    color:#333;
+    transform:translateY(-3px);
+
+}
+
+
+
+
+/* =========================
+   MOBILE RESPONSIVE MENU
+========================= */
+
+
+@media(max-width:900px){
+
+
+
+.header{
+
+    padding:15px 20px;
+
+}
+
+
+
+.logo-area h1{
+
+    font-size:22px;
+
+}
+
+
+
+.logo-area img{
+
+    width:55px;
+    height:55px;
+
+}
+
+
+
+.menu-icon{
+
+    display:block;
+
+}
+
+
+
+.navbar{
+
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#4B0082;
+    flex-direction:column;
+    gap:0;
+    display:none;
+    padding:20px 0;
+
+}
+
+
+
+.navbar a{
+
+    padding:15px;
+    width:100%;
+    text-align:center;
+
+}
+
+
+
+#menu-toggle:checked ~ .navbar{
+
+    display:flex;
+
+}
+
+
+
+/* Hero Mobile */
+
+
+.hero{
+
+    flex-direction:column;
+    padding:25px;
+
+}
+
+
+
+.hero-content,
+.hero-image{
+
+    width:100%;
+
+}
+
+
+
+.hero-content h1{
+
+    font-size:28px;
+
+}
+
+
+
+.hero-content h2{
+
+    font-size:24px;
+
+}
+
+
+
+}
+/* =========================
+   COMMON SECTION STYLE
+========================= */
+
+
+.section{
+
+    width:90%;
+    margin:50px auto;
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+
+
+.section-title{
+
+    text-align:center;
+    margin-bottom:35px;
+
+}
+
+
+
+.section-title h2{
+
+    color:#4B0082;
+    font-size:32px;
+    position:relative;
+
+}
+
+
+
+.section-title h2::after{
+
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    background:#FFD700;
+    margin:10px auto;
+
+}
+
+
+
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+
+.about-box{
+
+    display:flex;
+    align-items:center;
+    gap:40px;
+
+}
+
+
+
+.about-text{
+
+    width:55%;
+
+}
+
+
+
+.about-text h2{
+
+    color:#4B0082;
+    margin-bottom:15px;
+
+}
+
+
+
+.about-text p{
+
+    margin-bottom:15px;
+    font-size:17px;
+
+}
+
+
+
+.about-text ul{
+
+    padding-left:20px;
+
+}
+
+
+
+.about-text li{
+
+    margin:10px 0;
+
+}
+
+
+
+.about-image{
+
+    width:45%;
+
+}
+
+
+
+.about-image img{
+
+    border-radius:15px;
+
+}
+
+
+
+
+
+
+/* =========================
+   CARD CONTAINER
+========================= */
+
+
+.card-container{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+
+}
+
+
+
+
+/* =========================
+   CARD DESIGN
+========================= */
+
+
+.card{
+
+    background:#F8F0FF;
+    text-align:center;
+    padding:25px;
+    border-radius:15px;
+    transition:0.3s;
+    border:1px solid #EBD8FF;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(75,0,130,0.2);
+
+}
+
+
+
+.card img{
+
+    width:80px;
+    height:80px;
+    margin:auto;
+
+}
+
+
+
+.card h3{
+
+    color:#4B0082;
+    margin:15px 0;
+
+}
+
+
+
+.card p{
+
+    font-size:15px;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+
+.choose-box{
+
+    display:flex;
+    align-items:center;
+    gap:40px;
+
+}
+
+
+
+.choose-box > div{
+
+    width:50%;
+
+}
+
+
+
+.choose-box ul{
+
+    list-style:none;
+
+}
+
+
+
+.choose-box li{
+
+    background:#F8F0FF;
+    padding:12px;
+    margin:12px 0;
+    border-radius:8px;
+    font-size:16px;
+
+}
+
+
+
+.choose-box li::before{
+
+    content:"? ";
+    color:#4B0082;
+    font-weight:bold;
+
+}
+
+
+
+.choose-box img{
+
+    border-radius:15px;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   STATISTICS
+========================= */
+
+
+.stats{
+
+    width:90%;
+    margin:50px auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+
+}
+
+
+
+.stat-box{
+
+    background:#F8F0FF;
+    text-align:center;
+    padding:30px;
+    border-radius:15px;
+    border:1px solid #EBD8FF;
+
+}
+
+
+
+.stat-box h2{
+
+    color:#4B0082;
+    font-size:45px;
+
+}
+
+
+
+.stat-box p{
+
+    font-size:18px;
+    font-weight:bold;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   TABLET RESPONSIVE
+========================= */
+
+
+@media(max-width:1000px){
+
+
+.card-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.stats{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.about-box,
+.choose-box{
+
+    flex-direction:column;
+
+}
+
+
+
+.about-text,
+.about-image,
+.choose-box > div{
+
+    width:100%;
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+
+@media(max-width:600px){
+
+
+
+.section{
+
+    width:94%;
+    padding:20px;
+
+}
+
+
+
+.section-title h2{
+
+    font-size:24px;
+
+}
+
+
+
+.card-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.stats{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.card{
+
+    padding:20px;
+
+}
+
+
+
+.about-text p{
+
+    font-size:15px;
+
+}
+
+
+
+.stat-box h2{
+
+    font-size:35px;
+
+}
+
+
+
+}
+/* =========================
+   ADMISSION SECTION
+========================= */
+
+
+.admission-box{
+
+    display:flex;
+    align-items:center;
+    gap:40px;
+
+}
+
+
+.admission-box > div{
+
+    width:50%;
+
+}
+
+
+.admission-box h2{
+
+    color:#4B0082;
+    font-size:30px;
+    margin-bottom:15px;
+
+}
+
+
+.admission-box ul{
+
+    padding-left:20px;
+    margin:15px 0;
+
+}
+
+
+.admission-box li{
+
+    margin:8px 0;
+
+}
+
+
+.admission-box img{
+
+    border-radius:15px;
+
+}
+
+
+
+
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+
+.testimonial img{
+
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    margin:auto;
+
+}
+
+
+.testimonial h3{
+
+    margin-top:15px;
+
+}
+
+
+.testimonial p{
+
+    font-style:italic;
+    margin-top:10px;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   NEWS SECTION
+========================= */
+
+
+.news-box{
+
+    display:flex;
+    align-items:center;
+    gap:40px;
+
+}
+
+
+.news-box > div{
+
+    width:50%;
+
+}
+
+
+.news-box ul{
+
+    padding-left:20px;
+
+}
+
+
+.news-box li{
+
+    margin:15px 0;
+    font-size:17px;
+
+}
+
+
+.news-box img{
+
+    border-radius:15px;
+
+}
+
+
+
+
+
+
+/* =========================
+   GALLERY
+========================= */
+
+
+.gallery{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+
+}
+
+
+
+.gallery img{
+
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:0.3s;
+
+}
+
+
+
+.gallery img:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+.center-btn{
+
+    text-align:center;
+    margin-top:30px;
+
+}
+
+
+
+
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+
+.contact-box{
+
+    display:flex;
+    align-items:center;
+    gap:40px;
+
+}
+
+
+
+.contact-box > div{
+
+    width:50%;
+
+}
+
+
+
+.contact-box h2{
+
+    color:#4B0082;
+    margin-bottom:15px;
+
+}
+
+
+
+.contact-box p{
+
+    margin:15px 0;
+
+}
+
+
+
+.contact-box img{
+
+    border-radius:15px;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+
+.footer{
+
+    background:#4B0082;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    margin-top:50px;
+
+}
+
+
+
+.footer h2{
+
+    font-size:32px;
+
+}
+
+
+
+.footer p{
+
+    margin:10px 0;
+    color:#FFE4F2;
+
+}
+
+
+
+.footer-links{
+
+    margin:20px 0;
+
+}
+
+
+
+.footer-links a{
+
+    margin:0 12px;
+    color:white;
+    font-weight:bold;
+
+}
+
+
+
+.footer-links a:hover{
+
+    color:#FFD700;
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   FINAL RESPONSIVE DESIGN
+========================= */
+
+
+@media(max-width:900px){
+
+
+.admission-box,
+.news-box,
+.contact-box{
+
+    flex-direction:column;
+
+}
+
+
+
+.admission-box > div,
+.news-box > div,
+.contact-box > div{
+
+    width:100%;
+
+}
+
+
+
+.gallery{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+
+
+.logo-area p{
+
+    display:none;
+
+}
+
+
+
+.hero-buttons button{
+
+    width:90%;
+    margin:8px auto;
+
+}
+
+
+
+.gallery{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.gallery img{
+
+    height:250px;
+
+}
+
+
+
+.footer h2{
+
+    font-size:25px;
+
+}
+
+
+
+.footer-links a{
+
+    display:block;
+    margin:12px;
+
+}
+
+
+
+.admission-box h2{
+
+    font-size:24px;
+
+}
+
+
+
+.news-box li{
+
+    font-size:15px;
+
+}
+
+
+
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+
+.contact-form{
+
+    width:80%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+
+}
+
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+
+}
+
+
+.contact-form textarea{
+
+    resize:none;
+
+}
+
+
+.map-box iframe{
+
+    width:100%;
+    height:350px;
+    border:0;
+    border-radius:15px;
+
+}
+
+
+
+@media(max-width:600px){
+
+.contact-form{
+
+    width:100%;
+
+}
+
+
+.map-box iframe{
+
+    height:250px;
+
+}
+
+}
